@@ -74,18 +74,20 @@ body {
     margin-right: 10%; 
     padding-left: 0;
     padding-right: 0;
+    text-align: center;  /* Center the text */
 }
 
 .post-title {
     color: #ff6f61; /* Postcrossing red */
     margin-top: 20px;
-    text-align: left; /* Align post title to the left */
+    text-align: center; /* Center align post title */
 }
 
 .post-content {
     color: #343a40;
     text-align: justify; /* Justify the paragraph text */
     line-height: 1.5;
+    text-align: left;  /* Align text to the left */
 }
 
 .footer {
@@ -94,6 +96,16 @@ body {
     text-align: center;
     background-color: transparent; /* Remove footer background */
     font-size: 0.8rem; /* Smaller font for footer */
+}
+
+.footer-link {
+    color: #343a40; /* Ensure the link color matches the footer text */
+    text-decoration: none; /* Remove underline */
+    margin-left: 5px; /* Add space between text and link */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Responsive Menu */
