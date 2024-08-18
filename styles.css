@@ -63,6 +63,10 @@ body {
         white 25px,
         white 30px
     );
+    margin-top: 5px;
+    margin-left: 10%; /* Align ribbon with container margins */
+    margin-right: 10%;
+    width: 80%; /* Adjust width according to margins */
 }
 
 .post-title {
