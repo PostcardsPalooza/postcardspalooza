@@ -90,28 +90,27 @@ body {
     text-align: left;  /* Align text to the left */
 }
 
+/* Footer */
 .footer {
     color: #343a40;
     padding: 20px 0;
-    text-align: center;
     background-color: transparent;
     font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    position: relative; /* Allows for centering */
 }
 
 .footer p {
     margin: 0;
     padding: 0;
-    width: 100%;  /* Ensure full width of the container */
+    display: inline-block; /* Makes the paragraph take only as much width as needed */
     text-align: center;
 }
 
 .footer-link {
     color: #343a40;
     text-decoration: none;
-    margin-left: 5px; /* Add space between text and link */
+    margin-left: 5px; /* Adds space between text and link */
 }
 
 .footer-link:hover {
