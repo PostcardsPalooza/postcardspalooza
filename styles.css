@@ -90,6 +90,18 @@ body {
     text-align: left;  /* Align text to the left */
 }
 
+/* List Styling */
+ul, ol {
+    margin: 0;
+    padding-left: 40px; /* Adjust this value for proper indentation */
+    text-align: left; /* Ensures the text aligns to the left */
+}
+
+li {
+    margin-bottom: 10px; /* Adds spacing between list items */
+    text-align: left; /* Aligns the text to the left of the bullet */
+}
+
 /* Footer */
 .footer {
     color: #343a40;
