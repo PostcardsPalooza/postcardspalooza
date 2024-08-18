@@ -4,20 +4,22 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    padding: 0;
 }
 
 .container-fluid {
-    padding-left: 15%; /* Add padding to left */
-    padding-right: 15%; /* Add padding to right */
+    margin-left: 10%;  /* 10% margin on both sides */
+    margin-right: 10%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-/* Remove padding on smaller screens for responsiveness */
+/* Remove margin on smaller screens for responsiveness */
 @media (max-width: 768px) {
     .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -25,8 +27,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-brand {
@@ -47,6 +49,12 @@ body {
     width: 90px;
     height: 60px; /* 3:2 aspect ratio, larger to match heading size */
     border: 1px solid #ddd;
+}
+
+/* Flexbox for heading and flag on responsive screens */
+.navbar-header {
+    display: flex;
+    align-items: center;
 }
 
 .border-stripes {
@@ -75,5 +83,61 @@ body {
 .post-content {
     color: #343a40;
     text-align: justify; /* Justify the paragraph text */
-    line-height: 1.5; /* Set line spacing to 1.15 */
+    line-height: 1.5;
+}
+
+.footer {
+    color: #343a40;
+    padding: 20px 0;
+    text-align: center;
+    background-color: transparent; /* Remove footer background */
+    font-size: 0.8rem; /* Smaller font for footer */
+}
+
+/* Responsive Menu */
+.navbar-collapse {
+    justify-content: center;
+    background-color: #f8f9fa; /* Match background */
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-header {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navbar-brand,
+    .indian-flag {
+        text-align: left;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+
+    .navbar-toggler {
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .navbar-toggler span {
+        text-align: center;
+    }
 }
