@@ -23,19 +23,18 @@ body {
     }
 }
 
-.navbar {
+.navbar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10%; /* Align with container-fluid margins */
+    padding-right: 10%;
 }
 
 .navbar-brand {
     color: #ff6f61; /* Postcrossing red */
     font-size: 2rem;
     font-weight: bold;
-    padding: 1rem 0;
     background-color: transparent; /* Remove background color */
     text-align: left; /* Align heading to the left */
 }
@@ -49,12 +48,6 @@ body {
     width: 90px;
     height: 60px; /* 3:2 aspect ratio, larger to match heading size */
     border: 1px solid #ddd;
-}
-
-/* Flexbox for heading and flag on responsive screens */
-.navbar-header {
-    display: flex;
-    align-items: center;
 }
 
 .border-stripes {
@@ -71,7 +64,9 @@ body {
         white 30px
     );
     margin-top: 5px;
-    width: 100%; /* Ensure it takes full width */
+    margin-left: 10%; /* Align ribbon with container margins */
+    margin-right: 10%;
+    width: 80%; /* Adjust width according to margins */
 }
 
 .post-title {
@@ -116,17 +111,13 @@ body {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar-header {
-        justify-content: space-between;
-        width: 100%;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .navbar-brand,
     .indian-flag {
-        text-align: left;
-    }
-
-    .navbar-nav {
-        margin-top: 15px;
+        text-align: center;
     }
 
     .navbar-toggler {
