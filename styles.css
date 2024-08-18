@@ -94,18 +94,28 @@ body {
     color: #343a40;
     padding: 20px 0;
     text-align: center;
-    background-color: transparent; /* Remove footer background */
-    font-size: 0.8rem; /* Smaller font for footer */
+    background-color: transparent;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+    width: 100%;  /* Ensure full width of the container */
+    text-align: center;
 }
 
 .footer-link {
-    color: #343a40; /* Ensure the link color matches the footer text */
-    text-decoration: none; /* Remove underline */
+    color: #343a40;
+    text-decoration: none;
     margin-left: 5px; /* Add space between text and link */
 }
 
 .footer-link:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
 }
 
 /* Responsive Menu */
