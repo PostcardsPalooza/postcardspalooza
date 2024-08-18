@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* Use a simple and official font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.container-fluid {
+    padding-left: 15%; /* Add padding to left */
+    padding-right: 15%; /* Add padding to right */
+}
+
+/* Remove padding on smaller screens for responsiveness */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.navbar-brand {
+    color: #ff6f61; /* Postcrossing red */
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+    background-color: transparent; /* Remove background color */
+    text-align: left; /* Align heading to the left */
+}
+
+.navbar-brand:hover {
+    color: #ff6f61; /* Ensure heading color doesn't change on hover */
+}
+
+/* Adjust the flag size and position */
+.indian-flag {
+    width: 90px;
+    height: 60px; /* 3:2 aspect ratio, larger to match heading size */
+    border: 1px solid #ddd;
+}
+
+.border-stripes {
+    height: 20px;
+    background: repeating-linear-gradient(
+        135deg,
+        #ff6f61, /* Postcrossing red */
+        #ff6f61 10px,
+        white 10px,
+        white 15px,
+        #0073e6 15px, /* Postcrossing blue */
+        #0073e6 25px,
+        white 25px,
+        white 30px
+    );
+    margin-top: 5px;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.post-title {
+    color: #ff6f61; /* Postcrossing red */
+    margin-top: 20px;
+    text-align: left; /* Align post title to the left */
+}
+
+.post-content {
+    color: #343a40;
+    text-align: justify; /* Justify the paragraph text */
+    line-height: 1.5; /* Set line spacing to 1.15 */
+}

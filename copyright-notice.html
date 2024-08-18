@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards Palooza - Copyright Notice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Border with Parallelogram Stripes and White Space -->
+    <div class="border-stripes"></div>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-5">
+        <h2 class="post-title">Copyright Notice</h2>
+        <p class="post-content">
+            <b>Postcards Palooza</b> is a platform dedicated to fostering the spirit of postcrossing across India. We proudly invite postcrossers from all corners of the nation to participate and contribute to this vibrant community.
+        </p>
+        <h3 class="post-title">Platform Guidelines and Opportunities</h3>
+        <p class="post-content">
+            1. <b>Open Access for All Postcrossers Across India</b>: Our platform is designed to be inclusive and accessible to all Indian postcrossers, offering a space for connection, creativity, and collaboration.
+        </p>
+        <p class="post-content">
+            2. <b>City Profiles and Meetup Pages</b>: We offer the ability to maintain detailed profiles for respective cities, allowing each postcrossing community to showcase its unique identity. Additionally, dedicated pages for individual meetups can be created upon request, provided that a notice of at least 10 days is given. The service is available for a nominal charge.
+        </p>
+        <p class="post-content">
+            3. <b>City/Group Naming Freedom</b>: Your postcrossing group has the complete freedom to choose a name that best represents your city or community. We impose no restrictions on the names chosen, fostering a sense of individuality and pride.
+        </p>
+        <p class="post-content">
+            4. <b>Card Sales Page</b>: For those interested in selling their postcards, our platform offers the opportunity to open a dedicated sales page. This feature is available at a base charge, making it easy for postcrossers to share and sell their creative works.
+        </p>
+        <p class="post-content">
+            5. <b>Meetup QR Codes</b>: Every meetup organized through our platform will be provided with a unique QR code. This QR code will become active once all required details are submitted, including:
+            <ul>
+                <li><b>Before the Meetup</b>: The card design, location, and theme of the meetup must be provided.</li>
+                <li><b>After the Meetup</b>: The names and Postcrossing IDs of all attendees should be submitted.</li>
+            </ul>
+            The QR code will offer a seamless way to access meetup details and preserve the memory of each event.
+        </p>
+        <p class="post-content">
+            6. <b>Pre-Created Content for Approval</b>: Content related to your meetups will be prepared in advance and shared with the organizers for approval. Once approved, the content will be made live and accessible via the provided QR code at any time.
+        </p>
+        <h3 class="post-title">Support and Acknowledgement</h3>
+        <p class="post-content">
+            This project demands time, patience, and extensive communication to ensure a smooth and enjoyable experience for all participants. We believe that paying nominal charges is a fair and reasonable way to support the platform's operations and to enhance the overall experience. We appreciate your support in making this a valuable addition to your postcrossing meetups.
+        </p>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Include Header and Footer
+        fetch('data/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        fetch('data/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
