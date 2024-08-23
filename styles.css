@@ -206,11 +206,13 @@ li {
 
 /* Classes for image orientations */
 .horizontal {
-    max-height: 250px; /* Limit the height for horizontal images */
+    height:200px;
+    width:300px;
 }
 
 .vertical {
-    max-height: 400px; /* Limit the height for vertical images */
+    height:300px;
+    width:200px;
 }
 
 /* Responsive Design */
