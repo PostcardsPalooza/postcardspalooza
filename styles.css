@@ -83,17 +83,18 @@ body {
     text-align: center; /* Center align post title */
 }
 
+/* Side Headings */
 .side-heading {
-    color: #ff0000; /* Red */
+    text-align: left; /* Align side headings to the left */
+    color: red; /* Set the color of side headings to red */
+    font-weight: bold;
     margin-top: 20px;
-    text-align: left; 
 }
 
 .post-content {
     color: #343a40;
     text-align: justify; /* Justify the paragraph text */
     line-height: 1.5;
-    text-align: left;  /* Align text to the left */
 }
 
 /* List Styling */
