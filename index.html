@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Postcards Palooza</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="styles.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Postcards Palooza - Home</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Include Header -->
-    <div id="header"></div>
+	<!-- Include Header -->
+	<div id="header"></div>
 
-    <!-- Main Content -->
-    <div class="main-content mt-5">
-        <h2 class="post-title">Welcome to Postcards Palooza</h2>
-        <p class="post-content">Postcards Palooza is your one-stop platform for everything related to postcrossing across India...</p>
-    </div>
+	<!-- Main Content -->
+	<div class="container mt-5">
+	<h2 class="post-title">Welcome to Postcards Palooza!</h2>
+	<h5 class="post-title">Where Postcrossing Meets Indian Culture</h5>
+	
+	<div class="row image-grid">
+		<div class="image-container vertical">
+			<a href="postcrossing.com">
+				<img src="data/images/Postcrossing-Main-Logo.png" class="img-fluid">
+			</a>
+		</div>
+	</div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Include Header and Footer
-        fetch('data/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-    </script>
+	<h4 class="side-heading">What is Postcrossing?</h4>
+	<p class="post-content">Because it's fun, it's educational, and it brings the world to your doorstep! Every postcard is a story, a snapshot of a moment in time, a peek into the life of someone you'll probably never meet in person. Through Postcrossing, you can learn about different cultures, languages, traditions, and places. It’s a simple yet powerful way to explore the world without leaving your home.</p>
+
+	<h4 class="side-heading">Postcrossing in India</h4>
+	<p class="post-content">India, with its rich history and diverse culture, offers a unique flavor to Postcrossing. From the bustling streets of Mumbai to the serene backwaters of Kerala, Indian postcards carry with them the essence of a thousand stories. At Postcards Palooza, we're all about celebrating this diversity. We archive and showcase meetups from Indian Postcrossers, where enthusiasts gather, share their collections, and connect over their love for postcards.</p>
+
+	<h4 class="side-heading">Join the Fun!</h4>
+	<p class="post-content">Whether you're new to Postcrossing or a seasoned sender, Postcards Palooza is your gateway to the vibrant world of Indian Postcrossing. Explore our archives, dive into the stories behind each meetup, and get inspired to send a postcard of your own!</p>
+
+	<h4 class="side-heading">What Can You Learn?</h4>
+	<p class="post-content">Through Postcrossing, you can develop a deeper understanding of geography, improve your language skills, and even learn a bit of history. But more than that, you'll learn about kindness, curiosity, and the joy of connecting with others. Every postcard is a reminder that we're all part of a global community, bound together by simple acts of sharing.</p>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	// Include Header and Footer
+		fetch('data/header.html')
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById('header').innerHTML = data;
+		});
+	</script>
 </body>
 </html>
