@@ -83,6 +83,12 @@ body {
     text-align: center; /* Center align post title */
 }
 
+.side-heading {
+    color: #ff0000; /* Red */
+    margin-top: 20px;
+    text-align: left; 
+}
+
 .post-content {
     color: #343a40;
     text-align: justify; /* Justify the paragraph text */
