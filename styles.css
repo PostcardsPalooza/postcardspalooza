@@ -146,14 +146,17 @@ li {
 }
 
 /* Classes for image orientations */
-.horizontal {
-    height: 200px;
-    width: 300px;
+
+/* Image 1 and 3: Horizontal */
+.image-container.horizontal img {
+    width: 450px;
+    height: 300px;
 }
 
-.vertical {
-    height: 300px;
-    width: 200px;
+/* Image 2: Vertical */
+.image-container.vertical img {
+    width: 300px;
+    height: 450px;
 }
 
 /* Footer */
