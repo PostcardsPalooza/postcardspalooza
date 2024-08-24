@@ -2,229 +2,229 @@
 
 /* Use a simple and official font */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	margin: 0;
+	padding: 0;
 }
 
 /* Container Fluid */
 .container-fluid {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-left: 0;
-    padding-right: 0;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 /* Remove margin on smaller screens for responsiveness */
 @media (max-width: 768px) {
-    .container-fluid {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+	.container-fluid {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
 
 /* Navbar Header */
 .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10%; /* Align with container-fluid margins */
-    margin-right: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 10%; /* Align with container-fluid margins */
+	margin-right: 10%;
 }
 
 /* Navbar Brand */
 .navbar-brand {
-    color: #ff6f61; /* Postcrossing red */
-    font-size: 2rem;
-    font-weight: bold;
-    background-color: transparent; /* Remove background color */
-    text-align: left; /* Align heading to the left */
+	color: #ff6f61; /* Postcrossing red */
+	font-size: 2rem;
+	font-weight: bold;
+	background-color: transparent; /* Remove background color */
+	text-align: left; /* Align heading to the left */
 }
 
 .navbar-brand:hover {
-    color: #ff6f61; /* Ensure heading color doesn't change on hover */
+	color: #ff6f61; /* Ensure heading color doesn't change on hover */
 }
 
 /* Indian Flag */
 .indian-flag {
-    width: 90px;
-    height: 60px; /* 3:2 aspect ratio, larger to match heading size */
-    border: 1px solid #ddd;
+	width: 90px;
+	height: 60px; /* 3:2 aspect ratio, larger to match heading size */
+	border: 1px solid #ddd;
 }
 
 /* Border Stripes */
 .border-stripes {
-    height: 20px;
-    background: repeating-linear-gradient(
-        135deg,
-        #ff6f61, /* Postcrossing red */
-        #ff6f61 10px,
-        white 10px,
-        white 15px,
-        #0073e6 15px, /* Postcrossing blue */
-        #0073e6 25px,
-        white 25px,
-        white 30px
-    );
-    margin-top: 5px;
+	height: 20px;
+	background: repeating-linear-gradient(
+		135deg,
+		#ff6f61, /* Postcrossing red */
+		#ff6f61 10px,
+		white 10px,
+		white 15px,
+		#0073e6 15px, /* Postcrossing blue */
+		#0073e6 25px,
+		white 25px,
+		white 30px
+	);
+	margin-top: 5px;
 }
 
 /* Main Content */
 .main-content {
-    margin-left: 10%;  /* Align content with container-fluid margins */
-    margin-right: 10%; 
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;  /* Center the text */
+	margin-left: 10%;  /* Align content with container-fluid margins */
+	margin-right: 10%; 
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;  /* Center the text */
 }
 
 /* Post Title */
 .post-title {
-    color: #ff6f61; /* Postcrossing red */
-    margin-top: 20px;
-    text-align: center; /* Center align post title */
+	color: #ff6f61; /* Postcrossing red */
+	margin-top: 20px;
+	text-align: center; /* Center align post title */
 }
 
 /* Side Headings */
 .side-heading {
-    text-align: left; /* Align side headings to the left */
-    color: #ff6f61; /* Postcrossing red */
-    font-weight: bold;
-    margin-top: 20px;
+	text-align: left; /* Align side headings to the left */
+	color: #ff6f61; /* Postcrossing red */
+	font-weight: bold;
+	margin-top: 20px;
 }
 
 /* Post Content */
 .post-content {
-    color: #343a40;
-    text-align: justify; /* Justify the paragraph text */
-    line-height: 1.5;
+	color: #343a40;
+	text-align: justify; /* Justify the paragraph text */
+	line-height: 1.5;
 }
 
 /* List Styling */
 ul, ol {
-    margin: 0;
-    padding-left: 40px; /* Adjust this value for proper indentation */
-    text-align: left; /* Ensures the text aligns to the left */
+	margin: 0;
+	padding-left: 40px; /* Adjust this value for proper indentation */
+	text-align: left; /* Ensures the text aligns to the left */
 }
 
 li {
-    margin-bottom: 10px; /* Adds spacing between list items */
-    text-align: left; /* Aligns the text to the left of the bullet */
+	margin-bottom: 10px; /* Adds spacing between list items */
+	text-align: left; /* Aligns the text to the left of the bullet */
 }
 
 /* Image Grid */
 .image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    padding-left: 10%;  /* Align image grid with container-fluid margins */
-    padding-right: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+	padding-left: 10%;  /* Align image grid with container-fluid margins */
+	padding-right: 10%;
 }
 
 .image-container {
-    text-align: center;
-    max-width: 30%;
+	text-align: center;
+	max-width: 30%;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 8px;
 }
 
 .image-container .image-description {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #343a40;
+	margin-top: 10px;
+	font-size: 16px;
+	color: #343a40;
 }
 
 /* Classes for image orientations */
 
 /* Image 1 and 3: Horizontal */
 .image-container.horizontal img {
-    width: 300px;
-    height: 200px;
+	width: 300px;
+	height: 200px;
 }
 
 /* Image 2: Vertical */
 .image-container.vertical img {
-    width: 200px;
-    height: 300px;
+	width: 200px;
+	height: 300px;
 }
 
 /* Footer */
 .footer {
-    color: #343a40;
-    padding: 20px 0;
-    background-color: #f8f9fa;
-    font-size: 0.8rem;
-    text-align: center;
+	color: #343a40;
+	padding: 20px 0;
+	background-color: #f8f9fa;
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 .footer p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 }
 
 .footer-link {
-    color: #343a40;
-    text-decoration: none;
-    margin-left: 5px;
+	color: #343a40;
+	text-decoration: none;
+	margin-left: 5px;
 }
 
 .footer-link:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Responsive Menu */
 .navbar-collapse {
-    justify-content: center;
-    background-color: #f8f9fa; /* Match background */
+	justify-content: center;
+	background-color: #f8f9fa; /* Match background */
 }
 
 .navbar-nav {
-    text-align: center;
+	text-align: center;
 }
 
 .navbar-toggler {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .navbar-nav .nav-item {
-    margin: 0 10px;
+	margin: 0 10px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar-header {
-        justify-content: center;
-        flex-direction: column;
-    }
+	.navbar-header {
+		justify-content: center;
+		flex-direction: column;
+	}
 
-    .navbar-brand,
-    .indian-flag {
-        text-align: center;
-    }
+	.navbar-brand,
+	.indian-flag {
+		text-align: center;
+	}
 
-    .navbar-toggler {
-        width: 100%;
-    }
+	.navbar-toggler {
+		width: 100%;
+	}
 
-    .navbar-collapse {
-        margin-top: 10px;
-    }
+	.navbar-collapse {
+		margin-top: 10px;
+	}
 
-    .navbar-toggler span {
-        text-align: center;
-    }
+	.navbar-toggler span {
+		text-align: center;
+	}
 
-    .image-container {
-        max-width: 100%; /* Ensure images are full-width on small screens */
-    }
+	.image-container {
+		max-width: 100%; /* Ensure images are full-width on small screens */
+	}
 }
