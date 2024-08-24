@@ -14,6 +14,12 @@
 			justify-content: center;
 			align-items: center;
         	}
+		
+		.responsive-img {
+			width: 100%;
+			height: auto; /* Maintain aspect ratio */
+			max-width: 1000px; /* Limit the maximum width of the image */
+		}
 	</style>
 </head>
 <body>
@@ -27,7 +33,7 @@
 	
 	<div class="center">
 		<a href="http://postcrossing.com" target="_blank">
-			<img src="data/images/Postcrossing-Main-Logo.png" alt="Postcrossing" width="1000" height="150">
+			<img src="data/images/Postcrossing-Main-Logo.png" alt="Postcrossing" class="responsive-img">
 		</a>
 	</div>
 
