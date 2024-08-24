@@ -58,12 +58,12 @@ body {
 	height: 20px;
 	background: repeating-linear-gradient(
 		135deg,
-		#ff6f61, /* Postcrossing red */
-		#ff6f61 10px,
+		#C41E3A, /* Red */
+		#C41E3A 10px,
 		white 10px,
 		white 15px,
-		#0073e6 15px, /* Postcrossing blue */
-		#0073e6 25px,
+		#1434A4 15px, /* Blue */
+		#1434A4 25px,
 		white 25px,
 		white 30px
 	);
