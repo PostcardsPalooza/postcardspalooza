@@ -229,3 +229,32 @@ li {
 		max-width: 100%; /* Ensure images are full-width on small screens */
 	}
 }
+
+/* Table for Feedback */
+.feedback-table td {
+	padding: 15px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.feedback-table td a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0073e6; /* Postcrossing blue */
+}
+
+.feedback-table td a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.feedback-table td {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.feedback-table td:last-child {
+		margin-bottom: 0;
+	}
+}
