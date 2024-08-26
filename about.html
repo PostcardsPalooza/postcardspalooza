@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="styles.css" rel="stylesheet">
+	<style>
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+        	}
+		
+		.responsive-img {
+			width: 100%;
+			height: auto; /* Maintain aspect ratio */
+			max-width: 1000px; /* Limit the maximum width of the image */
+		}
+	</style>
+</head>
+<body>
+	<!-- Include Header -->
+	<div id="header"></div>
+
+	<!-- Main Content -->
+	<div class="container mt-5">
+	<h2 class="post-title">About Us</h2>
+
+	<h4 class="side-heading">The Birth of an Idea</h4>
+	<p class="post-content">The concept for this website was conceived during a casual lunch following the August 2024 Karnataka Philatelic Society (KPS) meeting. As conversations drifted from one topic to another, the idea of creating a digital archive for Postcrossing meetups began to take shape. What started as a simple suggestion soon evolved into something much more meaningful.</p>
+	
+	<h4 class="side-heading">Encouragement and Execution</h4>
+	<p class="post-content">Vasanth, one of my close frineds, said something which gave me the idea of sorts. With his encouragement and support, a template for the website was prepared within just ten days. This rapid progress was a testament to the passion and dedication of everyone involved, eager to preserve the memories of our cherished meetups.</p>
+	
+	<h4 class="side-heading">A Plan for Archiving Memories</h4>
+	<p class="post-content">Our primary goal with this website is to create a comprehensive archive of all Postcrossing meetups. Each entry will detail the venue, the attendees, and the unique theme of the event. By documenting these moments, we hope to provide a lasting record of our shared experiences, one that future members of the community can look back on with fondness.</p>
+	
+	<h4 class="side-heading">Connecting Through QR Codes</h4>
+	<p class="post-content">For those who receive cards through Postcrossing or direct swaps, we've introduced a special feature: QR codes printed on the cards. When scanned, these QR codes will lead recipients to our website, where they can learn more about us and the meetups that made these cards possible. It's our way of extending a warm invitation to the wider world of Postcrossing.</p>
+	
+	<h4 class="side-heading">A Portal for Our Collective Memories</h4>
+	<p class="post-content">We envision this website as more than just an archive—it's a portal dedicated to the memories of all our meetups. By gathering these stories in one place, we hope to create a resource that captures the essence of our Postcrossing community. It would be wonderful to see this portal grow, reflecting the diverse experiences and connections we've made along the way.</p>
+	
+	<h4 class="side-heading">A Special Thanks</h4>
+	<p class="post-content">I want to thank all my friends, especially Vasanth, who liked the idea, and supported me to create this.</p>
+	
+	<p class="post-content"><b><u><i>Praneeth...</i></u></b></p>
+	
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+	// Include Header and Footer
+		fetch('data/header.html')
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById('header').innerHTML = data;
+		});
+	</script>
+</body>
+</html>
