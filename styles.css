@@ -147,14 +147,14 @@ li {
 
 /* Image 1 and 3: Horizontal */
 .image-container.horizontal img {
-	width: 450px;
-	height: 300px;
+	width: 300px;
+	height: 200px;
 }
 
 /* Image 2: Vertical */
 .image-container.vertical img {
-	width: 300px;
-	height: 450px;
+	width: 200px;
+	height: 300px;
 }
 
 /* Footer */
