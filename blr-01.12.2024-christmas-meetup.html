@@ -1,1 +1,75 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Christmas Meet-up</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Include Header -->
+	<div id="header"></div>
+
+	<!-- Main Content -->
+	<div class="container mt-5">
+		<h2 class="post-title">A Festive Postcrossing Meetup at The Urban Solace</h2>
+		
+		<p class="post-content">On December 1, the Postcrossing community in Bengaluru gathered at The Urban Solace to celebrate the spirit of the season. The event was marked by laughter, creativity, and the joy of sharing, with members turning up in Christmas colors of red, white, and green.</p>
+
+		<!-- Image Grid -->
+		<div class="row image-grid">
+			<div class="image-container vertical">
+				<img src="data/images/bengaluru/blr-01.12.2024-christmas-meetup-official-card.jpg" alt="Christmas Meetup Official Card" class="img-fluid">
+			</div>
+			<div class="image-container horizontal">
+				<img src="data/images/bengaluru/blr-01.12.2024-christmas-meetup-group-photo.jpg" alt="Christmas Meetup Group Photo" class="img-fluid">
+			</div>
+		</div>
+
+		<h4 class="side-heading">A Cozy Christmas Ambiance</h4>
+		<p class="post-content">Sagar, the host of the meetup, set the tone for the day by arranging the event in a warm and cozy setting. The venue was filled with the festive spirit, enhanced by colorful decorations and cheerful vibes. Sagar even packed the meetup cards in a vibrant, festival-themed wrapper, adding a personal touch that delighted everyone.</p>
+
+    <h4 class="side-heading">Custom-Designed Meetup Cards</h4>
+		<p class="post-content">To commemorate the occasion, two exclusive Postcrossing meetup cards were created. One featured the map outline of Karnataka state, while the other paid tribute to Kempegowda, the founding father of Bengaluru city. These cards were a unique keepsake for all attendees.</p>
+
+    <h4 class="side-heading">Surprise Guests: Paco and Ms. Zoe Patrick</h4>
+		<p class="post-content">Adding a unique charm to the meetup, a pup named Paco attended the event dressed as a reindeer. His adorable costume and friendly demeanor brought smiles to everyone’s faces. Members took the opportunity to click photos with Paco before diving into the activities.</p>
+		<p>In an unexpected turn of events, Ms. Zoe Patrick, a fellow Postcrosser who happened to be at the venue, joined the group. By the end of the day, she became an integral part of the community, making the meetup even more special.</p>
+
+    <h4 class="side-heading">First-Timers and Long Journeys</h4>
+		<p class="post-content">Dr. Prathibha, who traveled all the way from Mysuru, attended her first-ever meetup. Her enthusiasm and joy were contagious, as she connected with fellow Postcrossers and enjoyed the activities. It was heartwarming to see first-timers like her feeling at home in the community.</p>
+		
+	<h4 class="side-heading">Activities and Highlights</h4>
+		<p class="post-content">The day was packed with fun-filled activities and memorable moments:</p>
+		<ul>
+			<li><b>Postcard Signing:</b> Members gathered around to sign beautifully designed Christmas-themed postcards.</li>
+			<li><b>Coloring Sessions:</b> Creative minds came alive as participants colored Christmas-themed postcards, adding a personal artistic touch.</li>
+			<li><b>Secret Santa:</b> Themed around “Postcrossing” and “Christmas,” the Secret Santa exchange brought delightful surprises for everyone.</li>
+			<li><b>Caroling:</b> Members spread holiday cheer through caroling, creating a festive atmosphere.</li>
+			<li><b>Gifts for Everyone:</b> Attendees received postcards, bookmarks, and other thoughtful goodies.</li>
+			<li><b>Laughter Galore:</b> Sonali and Lochan kept the group entertained with their continuous jokes, ensuring there was never a dull moment.</li>
+		</ul>
+		
+	<h4 class="side-heading">A Successful Collaboration</h4>
+		<p class="post-content">This meetup was Sagar’s first time hosting such an event, and it turned out to be a grand success, thanks to the support from Karishma. Their teamwork ensured everything ran smoothly, making the day enjoyable for everyone.</p>
+		
+	<h4 class="side-heading">A Heartfelt Thank You</h4>
+		<p class="post-content">As the event concluded, it was clear that the meetup was more than just an exchange of postcards; it was a celebration of community and connection. Thank you to everyone who participated and made this gathering unforgettable. The Postcrossing community looks forward to more such joyful meetups in the future!</p>
+    
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="scripts.js"></script>
+	<script>
+		// Include Header and Footer
+		fetch('data/header.html')
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById('header').innerHTML = data;
+			});
+		 generateDynamicTable(feedbackData, 'dynamicTable');
+	</script>
+</body>
+</html>
