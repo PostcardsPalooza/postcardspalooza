@@ -119,43 +119,46 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align: center;
+	align-items: center; /* Align items vertically at the center */
 	gap: 20px;
 	margin-top: 20px;
 	padding-left: 10%;  /* Align image grid with container-fluid margins */
 	padding-right: 10%;
 }
 
+/* Image Container */
 .image-container {
+	display: flex;
+	flex-direction: column; /* Stack image and description */
+	align-items: center; /* Center align image and text horizontally */
+	justify-content: center; /* Center align image and text vertically */
 	text-align: center;
 	max-width: 30%;
 }
 
 .image-container img {
-	width: 100%;
+	max-width: 100%; /* Ensure images scale properly */
 	height: auto;
-	object-fit: cover;
+	object-fit: contain; /* Keep aspect ratio and fit within dimensions */
 	border-radius: 8px;
 }
 
-.image-container .image-description {
-	margin-top: 10px;
-	font-size: 16px;
-	color: #343a40;
-}
-
-/* Classes for image orientations */
-
-/* Image 1 and 3: Horizontal */
+/* Horizontal and Vertical Image Sizing */
 .image-container.horizontal img {
 	width: 300px;
 	height: 200px;
 }
 
-/* Image 2: Vertical */
 .image-container.vertical img {
 	width: 200px;
 	height: 300px;
+}
+
+/* Description Text */
+.image-container .image-description {
+	margin-top: 10px;
+	font-size: 16px;
+	color: #343a40;
 }
 
 /* Footer */
