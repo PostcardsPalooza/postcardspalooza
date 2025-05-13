@@ -154,6 +154,11 @@ li {
 	height: 300px;
 }
 
+.image-container.groupphoto img {
+	width: 600px;
+	height: 900px;
+}
+
 /* Description Text */
 .image-container .image-description {
 	margin-top: 10px;
